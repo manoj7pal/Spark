@@ -1,0 +1,4 @@
+findspark==2.0.1
+py4j==0.10.7
+pypandoc==1.5
+pyspark==2.4.4
