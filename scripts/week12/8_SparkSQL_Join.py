@@ -54,12 +54,7 @@ customers_df = spark.read   \
             .schema(schema=customer_schema) \
             .load('dataset/customers.csv')
 
-orders_df = spark.read  \
-            .format("csv")   \
-            .option('header', 'true')  \
-            .schema(schema=order_schema)    \
-            .option('dateFormat', 'yyyy-MM-dd HH:mm:ss.S')  \
-            .load('dataset/orders.csv')
+ 
 
 # print(customers_df.show())
 # print(orders_df.show())
